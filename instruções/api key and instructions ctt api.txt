@@ -1,0 +1,75 @@
+99603d2d326e4e8489f9d2d4d647db4c api key
+
+// A API apenas tem um endpoint: /api/v1/<API-KEY>/<CP4>-<CP3>
+
+API-KEY - A sua chave de acesso à API, enviada por email
+CP4 - Os primeiros 4 digitos do código postal
+CP3 - Os últimos 3 digitos do código postal, a seguir ao hifen// 
+
+// Exemplo de pedido
+GET https://www.cttcodigopostal.pt/api/v1/aaa0011aaa0011aaa0011aaa0011/2520-193
+
+Em caso de sucesso, o servidor devolve um 200 OK e a informação sobre o código postal em formato JSON:
+[
+  {
+    "morada": "Rua Engenheiro Carlos Alberto Guerreiro ",
+    "porta": "",
+    "localidade": "Baleal",
+    "freguesia": "Ferrel",
+    "concelho": "Peniche",
+    "distrito": "Leiria",
+    "latitude": "39.352983",
+    "longitude": "-9.3562203",
+    "codigo-postal": "2520-193",
+    "info-local": "Urbanização Baleal Sol Village II",
+    "codigo-arteria": "215980000",
+    "concelho-codigo": 14,
+    "distrito-codigo": 10
+  },
+  {
+    "morada": "Rua do Salgado ",
+    "porta": "",
+    "localidade": "Baleal",
+    "freguesia": "Ferrel",
+    "concelho": "Peniche",
+    "distrito": "Leiria",
+    "latitude": "39.3565342",
+    "longitude": "-9.3552865",
+    "codigo-postal": "2520-193",
+    "info-local": "Urbanização Baleal Sol Village II",
+    "codigo-arteria": "215990000",
+    "concelho-codigo": 14,
+    "distrito-codigo": 10
+  },
+  {
+    "morada": "Rua do Zimbral ",
+    "porta": "",
+    "localidade": "Baleal",
+    "freguesia": "Ferrel",
+    "concelho": "Peniche",
+    "distrito": "Leiria",
+    "latitude": "39.352983",
+    "longitude": "-9.3562203",
+    "codigo-postal": "2520-193",
+    "info-local": "Urbanização Baleal Sol Village II",
+    "codigo-arteria": "216000000",
+    "concelho-codigo": 14,
+    "distrito-codigo": 10
+  },
+  {
+    "morada": "Rua do Gorjão ",
+    "porta": "",
+    "localidade": "Baleal",
+    "freguesia": "Ferrel",
+    "concelho": "Peniche",
+    "distrito": "Leiria",
+    "latitude": "39.3658757",
+    "longitude": "-9.3173746",
+    "codigo-postal": "2520-193",
+    "info-local": "",
+    "codigo-arteria": "664410000",
+    "concelho-codigo": 14,
+    "distrito-codigo": 10
+  }
+]
+Em caso de erro, o servidor devolve um 400 Bad Request ou 500 Bad Request e a informação sobre o erro no body.//

@@ -1,0 +1,1 @@
+SELECT * FROM postal_db.postal_codes;

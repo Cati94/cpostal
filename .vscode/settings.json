@@ -1,0 +1,13 @@
+{
+    "pythonIndent.keepHangingBracketOnLine": true,
+    "pythonIndent.trimLinesWithOnlyWhitespace": true,
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "postal_db",
+            "database": "${workspaceFolder:cpostal}/postal_db.db"
+        }
+    ]
+}
